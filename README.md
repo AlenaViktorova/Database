@@ -1,6 +1,10 @@
 # Database
 
-**TASK:** Creating a console application that will contain a custom in-memory database of people
+**TASK:** Creating a console application that will contain a custom in-memory database of people.<br />
+ &emsp; Possible actions:
+ &emsp; 1. Add
+ &emsp; 2. Delete
+ &emsp; 3. Find
 
 **Run this console app with:**  <br />
  &emsp; java -jar path\Database.jar <br />
