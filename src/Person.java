@@ -17,7 +17,7 @@ class Person {
     }
 
     /**
-     * Returning firstName of object Person.
+     * Returning firstName.
      * @return  firstName
      */
     public String getFirstName() {
@@ -25,7 +25,7 @@ class Person {
     }
 
     /**
-     * Returning lastName of object Person.
+     * Returning lastName.
      * @return  lastName
      */
     public String getLastName() {
@@ -33,7 +33,7 @@ class Person {
     }
 
     /**
-     * Returning social insurance number of object Person.
+     * Returning social insurance number.
      * @return  social insurance number
      */
     public String getIdNumber() {
