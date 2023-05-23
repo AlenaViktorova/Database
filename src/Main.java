@@ -1,4 +1,3 @@
-//java -cp app.jar com.somepackage.SomeClass
 import java.util.Scanner;
 
 public class Main {
