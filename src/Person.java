@@ -17,7 +17,7 @@ class Person {
     }
 
     /**
-     * Returning firstName.
+     * Returning firstName of object Person.
      * @return  firstName
      */
     public String getFirstName() {
@@ -25,7 +25,7 @@ class Person {
     }
 
     /**
-     * Returning lastName.
+     * Returning lastName of object Person.
      * @return  lastName
      */
     public String getLastName() {
@@ -33,7 +33,7 @@ class Person {
     }
 
     /**
-     * Returning social insurance number.
+     * Returning social insurance number of object Person.
      * @return  social insurance number
      */
     public String getIdNumber() {
@@ -44,6 +44,7 @@ class Person {
      * Returning formatted string containing firstName, lastName and social insurance number.
      * @return  formatted string
      */
+    @Override
     public String toString() {
         return firstName + " " + lastName + ", personal ID is: " + idNumber;
     }
