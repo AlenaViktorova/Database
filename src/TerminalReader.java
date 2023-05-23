@@ -67,7 +67,7 @@ public class TerminalReader {
                     int day = Integer.parseInt(dayPart);
                     int month = Integer.parseInt(monthPart);
 
-                    if ((day > 0 && day < 31) && ((month > 0 && month < 13) || (month > 50 && month < 63))) {
+                    if ((day > 0 && day < 32) && ((month > 0 && month < 13) || (month > 50 && month < 63))) {
                         validFormat = true;
                     } else {
                         throw new Exception("Probably wrong month or date.");
