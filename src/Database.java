@@ -23,6 +23,8 @@ class Database {
 
         // Check if a person with the same personal ID already exists
         Person existingPerson = this.findByIdNumber(personalId);
+    	
+
         if (existingPerson != null) {
             System.err.println("Error: A person with the same personal ID already exists in the database. Press y to continue or n to finish the program.");
         }
@@ -73,9 +75,10 @@ class Database {
 
     /**
      * Finding person from database by firstName. <p>
+     * Never use - just for case<p>
      * Returning null if the person is not in database.
      * @param  firstName firstName of wanted person
-     * @return      object Person from database, where Person.firstName is same as wanted firstName or null
+     * @return	object Person from database, where Person.firstName is same as wanted firstName or null
      */
     private Person findByFirstName(String firstName) {
         for (Person person : persons) {
@@ -88,9 +91,10 @@ class Database {
 
     /**
      * Finding person from database by lastName. <p>
+     * Never use - just for case<p>
      * Returning null if the person is not in database.
      * @param  lastName firstName of wanted person
-     * @return      object Person from database, where Person.lastName is same as wanted lastName or null
+     * @return	object Person from database, where Person.lastName is same as wanted lastName or null
      */
     private Person findByLastName(String lastName) {
         for (Person person : persons) {
@@ -105,8 +109,7 @@ class Database {
      * Finding person from database by social insurance number. <p>
      * Returning null if the person is not in database.
      * @param  number social insurance number of wanted person
-     * @return      object Person from database, where Person.idNumber is same as wanted number or null
-     *
+     * @return	Person from database, where Person.idNumber is same as wanted number or null
      */
     private Person findByIdNumber(String number) {
 
@@ -118,7 +121,12 @@ class Database {
         return null;
     }
 
-    @Override
+
+    /**
+     * Return formated database <p>
+     * @return	formated database
+     *
+     */
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(name);
