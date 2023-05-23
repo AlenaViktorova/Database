@@ -44,7 +44,6 @@ class Person {
      * Returning formatted string containing firstName, lastName and social insurance number.
      * @return  formatted string
      */
-    @Override
     public String toString() {
         return firstName + " " + lastName + ", personal ID is: " + idNumber;
     }
